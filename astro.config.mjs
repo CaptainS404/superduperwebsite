@@ -7,7 +7,7 @@ import { defineConfig, fontProviders } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://CaptainS404.github.io',
-  	base: '/superduperwebsite',
+  	base: '/superduperwebsite/',
 	integrations: [mdx(), sitemap()],
 	fonts: [
 		{

@@ -8,7 +8,11 @@ import { defineConfig, fontProviders } from 'astro/config';
 export default defineConfig({
 	site: 'https://CaptainS404.github.io',
   	base: '/superduperwebsite/',
+	output: 'static',
 	integrations: [mdx(), sitemap()],
+	vite: {
+			base: '/superduperwebsite/'
+	},
 	fonts: [
 		{
 			provider: fontProviders.local(),

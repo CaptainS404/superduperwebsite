@@ -1,8 +1,8 @@
 ---
 import Navigation from '../components/Navigation.astro';
 import "../styles/global.css";
-
-const pageTitle = "Home Page";
+const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
+const pageTitle = "My blogs";
 ---
 
 <html lang="en">
@@ -16,5 +16,6 @@ const pageTitle = "Home Page";
   <body>
     <Navigation />
     <h1>My blogs</h1>
+     {allPosts.map((post: any) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
   </body>
 </html>

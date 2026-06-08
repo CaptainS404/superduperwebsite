@@ -44,7 +44,7 @@ h1 {
 
 .nav-links a:hover,
 .nav-links a:focus {
-  background-color: #d4a294;
+  background-color: #ebb3a3;
   border-radius: 10px;
 }
 
@@ -60,6 +60,7 @@ h1 {
 
   .nav-links a {
     display: inline-block;
+    text-align: center;
     padding: 15px 20px;
   }
 }

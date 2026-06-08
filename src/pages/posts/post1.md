@@ -47,3 +47,13 @@ My components:
 - **1TB + 2TB Crucial 2.5' SSD**
 
 It's well fast enough for my uses, the components cost about 700-800$ in total at the time I bought the parts.
+
+## Now for Ubuntu.. ##
+Well, in my opinion, it is indeed an easy to use distro. **However**, it has brought some problems over the time. 
+My first bad experience with it was a broken installer, while I was originally installing Ubuntu on my laptop, the installer
+randomly broke and I had to restart the installation. Other slight problems I had were about snaps, I just don't like them.
+Snaps tend to just not work here and there, **I just don't like them v2**.
+With CachyOS, which is my main OS on my desktop PC, I haven't really had any problems at all, all my drivers, programs and games just work 
+and have worked out of box.
+
+For now, I got everything to work how I want it and don't plan of changing anything.

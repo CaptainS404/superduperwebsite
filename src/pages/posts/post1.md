@@ -6,7 +6,7 @@ description: 'This is the first post of my new Astro blog.'
 author: 'Captain S'
 tags: ["astro", "blogging", "learning in public"]
 ---
-# First post, my setup #
+
 Congrats! You reached my first post. Here, I will talk a bit about my setup, which I use for my daily work, art and school.
 My main work happens either on my desktop PC or my laptop, while I use the first for digital art. I'll get into the specifics later.
 

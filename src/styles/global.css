@@ -44,6 +44,7 @@ h1 {
 .nav-links a:hover,
 .nav-links a:focus {
   background-color: #ff9776;
+  border-radius: 10%;
 }
 
 @media screen and (min-width: 636px) {

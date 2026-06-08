@@ -30,7 +30,7 @@ It has the following components, for those interested:
 - **Intel Core i5 7330U**
 - **16GB DDR4 RAM**
 - **256 SSD**
-   **touchscreen**
+- **touchscreen**
 
 Sure, it's getting a little old, does no longer support Windows 11, with Linux though, it's still an absolute beast.
 I haven't tried that many distros for now, Ubuntu 24 has worked great though, more on that later. I don't use it much for any intensive tasks, I mostly 

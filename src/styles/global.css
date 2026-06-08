@@ -44,17 +44,18 @@ h1 {
 
 .nav-links a:hover,
 .nav-links a:focus {
-  background-color: #ff9776;
-  border-radius: 10%;
+  background-color: #d4a294;
+  border-radius: 10px;
 }
 
 @media screen and (min-width: 636px) {
   .nav-links {
     margin-left: 5em;
-    display: block;
+    display: inline-block;
     position: static;
     width: auto;
     background: none;
+    text-align: center;
   }
 
   .nav-links a {

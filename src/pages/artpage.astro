@@ -1,0 +1,38 @@
+---
+import Navigation from '../components/Navigation.astro';
+import "../styles/global.css";
+
+const pageTitle = "Art Page";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} >
+    <title>Astro</title>
+  </head>
+ 
+  <body>
+    <Navigation />
+    <h1>This is where my art can be found</h1>
+    <p>
+      I seperated my art into two categories, one for sketches and one for my finished pieces.
+      <br>
+      I rarely finish anything, so don't be surprised if you won't find much finished work. I hope this site helps me to improve my art habits a bit though.
+    </p>
+
+    <p>Main things I like to draw:</p>
+
+    <ul>
+        <li>Post apocalyptic/military stuff</li>
+        <li>People and anatomy studies</li>
+        <li>Some animals</li>
+        <li>Silly little doodles</li>
+    </ul>
+   
+    <p>If you want to read my opinions on art, check my blogs!</p>
+
+  </body>
+</html>

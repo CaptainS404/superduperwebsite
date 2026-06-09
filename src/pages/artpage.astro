@@ -35,8 +35,8 @@ const allArt = await getCollection('artwork');
               <Image 
                 src={imageSrc}
                 alt={piece.data.alt}
-                width={800}           // <-- Add these
-                height={600}          // <-- Add these (adjust ratio as needed)
+                width={800}           
+                height={600}         
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 class="w-full aspect-[4/3] object-cover transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"

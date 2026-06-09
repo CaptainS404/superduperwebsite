@@ -33,14 +33,14 @@ const allArt = await getCollection('artwork');
               class="group block overflow-hidden rounded-xl bg-zinc-900 hover:ring-2 hover:ring-zinc-400 transition-all"
             >
               <Image 
-                src={imageSrc}
-                alt={piece.data.alt}
-                width={800}           
-                height={600}         
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                class="w-full aspect-[4/3] object-cover transition-transform duration-300 group-hover:scale-105"
-                loading="lazy"
-              />
+                 src={`/src/assets/art/${piece.id}.jpg`} 
+                 alt={piece.data.alt}
+                 width={800}
+                 height={600}
+                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                 class="w-full aspect-[4/3] object-cover transition-transform duration-300 group-hover:scale-105"
+                 loading="lazy"
+                />
               <div class="p-4">
                 <h3 class="font-medium text-lg">{piece.data.title}</h3>
                 {piece.data.medium && <p class="text-sm text-zinc-400">{piece.data.medium}</p>}

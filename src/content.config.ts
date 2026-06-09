@@ -17,7 +17,7 @@ const blog = defineCollection({
 		}),
 });
 
-// New: Art collection
+// New artwork collection
 const artwork = defineCollection({
 	loader: glob({ base: './src/content/artwork', pattern: '**/*.{md,mdx}' }),
 	schema: z.object({
@@ -28,7 +28,6 @@ const artwork = defineCollection({
 		alt: z.string(),
 	}),
 });
-
 
 export const collections = { blog, artwork };
 

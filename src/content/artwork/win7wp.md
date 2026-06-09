@@ -1,8 +1,8 @@
 ---
-title: "win7wp"
+title: "Midnight Bloom"
 date: 2025-06-01
-medium: "Digital painting"
-alt: "wallpaper"
+medium: "Digital"
+alt: "Description of the image for accessibility"
 ---
 
-just a test, not mine
+Optional story or notes here.

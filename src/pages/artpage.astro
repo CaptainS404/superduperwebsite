@@ -24,30 +24,35 @@ const allArt = await getCollection('artwork');
       <p class="text-lg mb-8">Sketches and finished pieces. I mostly draw post-apocalyptic stuff, anatomy, and random doodles.</p>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {allArt.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()).map((piece) => (
-          <a 
-            href={`/art/${piece.id}`} 
-            class="group block overflow-hidden rounded-xl bg-zinc-900 hover:ring-2 hover:ring-zinc-400 transition-all"
-          >
-            <Image 
-              src={`/src/assets/art/${piece.id}.jpg`} 
-              alt={piece.data.alt}
-              widths={[400, 800, 1200]}
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              class="w-full aspect-[4/3] object-cover transition-transform duration-300 group-hover:scale-105"
-              loading="lazy"
-            />
-            <div class="p-4">
-              <h3 class="font-medium text-lg">{piece.data.title}</h3>
-              {piece.data.medium && <p class="text-sm text-zinc-400">{piece.data.medium}</p>}
-            </div>
-          </a>
-        ))}
-      </div>
+        {allArt.sort((a, b) => new Date(b.data.date || 0).getTime() - new Date(a.data.date || 0).getTime()).map((piece) => {
+          // Use dynamic import for local images
+          const imageSrc = `/src/assets/art/${piece.id}.jpg`; // Astro will resolve this
+          return (
+            <a 
+              href={`/superduperwebsite/art/${piece.id}`} 
+              class="group block overflow-hidden rounded-xl bg-zinc-900 hover:ring-2 hover:ring-zinc-400 transition-all"
+            >
+              <Image 
+                src={imageSrc}
+                alt={piece.data.alt}
+                width={800}           // <-- Add these
+                height={600}          // <-- Add these (adjust ratio as needed)
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                class="w-full aspect-[4/3] object-cover transition-transform duration-300 group-hover:scale-105"
+                loading="lazy"
+              />
+              <div class="p-4">
+                <h3 class="font-medium text-lg">{piece.data.title}</h3>
+                {piece.data.medium && <p class="text-sm text-zinc-400">{piece.data.medium}</p>}
+              </div>
+            </a>
+          );
+        })}
 
-      {allArt.length === 0 && (
-        <p class="text-center text-xl py-12">No artwork yet — add some .md files in src/content/artwork/ and images in src/assets/art/</p>
-      )}
+        {allArt.length === 0 && (
+          <p class="text-center text-xl py-12 col-span-full">No artwork yet — add .md files in src/content/artwork/ and matching images in src/assets/art/</p>
+        )}
+      </div>
     </main>
   </body>
 </html>

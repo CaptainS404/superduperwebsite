@@ -17,4 +17,18 @@ const blog = defineCollection({
 		}),
 });
 
-export const collections = { blog };
+// New: Art collection
+const artwork = defineCollection({
+	loader: glob({ base: './src/content/artwork', pattern: '**/*.{md,mdx}' }),
+	schema: z.object({
+		title: z.string(),
+		description: z.string().optional(),
+		date: z.coerce.date().optional(),
+		medium: z.string().optional(),
+		alt: z.string(),
+	}),
+});
+
+
+export const collections = { blog, artwork };
+

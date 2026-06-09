@@ -1,10 +1,8 @@
 ---
 import Navigation from '../components/Navigation.astro';
 import "../styles/global.css";
-import { getCollection } from 'astro:content';
-import { Image } from 'astro:assets';
 
-const allArt = await getCollection('artwork');
+const pageTitle = "Art Page";
 ---
 
 <html lang="en">
@@ -13,46 +11,28 @@ const allArt = await getCollection('artwork');
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} >
-    <title>My Art</title>
+    <title>Astro</title>
   </head>
-  
+ 
   <body>
     <Navigation />
-    
-    <main class="max-w-6xl mx-auto px-6 py-12">
-      <h1 class="text-4xl font-bold mb-4">My Art</h1>
-      <p class="text-lg mb-8">Sketches and finished pieces. I mostly draw post-apocalyptic stuff, anatomy, and random doodles.</p>
+    <h1>This is where my art can be found</h1>
+    <p>
+      I seperated my art into two categories, one for sketches and one for my finished pieces.
+      <br>
+      I rarely finish anything, so don't be surprised if you won't find much finished work. I hope this site helps me to improve my art habits a bit though.
+    </p>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {allArt.sort((a, b) => new Date(b.data.date || 0).getTime() - new Date(a.data.date || 0).getTime()).map((piece) => {
-          // Use dynamic import for local images
-          const imageSrc = `/src/assets/art/${piece.id}.jpg`; // Astro will resolve this
-          return (
-            <a 
-              href={`/superduperwebsite/art/${piece.id}`} 
-              class="group block overflow-hidden rounded-xl bg-zinc-900 hover:ring-2 hover:ring-zinc-400 transition-all"
-            >
-              <Image 
-                 src={`/src/assets/art/${piece.id}.jpg`} 
-                 alt={piece.data.alt}
-                 width={800}
-                 height={600}
-                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                 class="w-full aspect-[4/3] object-cover transition-transform duration-300 group-hover:scale-105"
-                 loading="lazy"
-                />
-              <div class="p-4">
-                <h3 class="font-medium text-lg">{piece.data.title}</h3>
-                {piece.data.medium && <p class="text-sm text-zinc-400">{piece.data.medium}</p>}
-              </div>
-            </a>
-          );
-        })}
+    <p>Main things I like to draw:</p>
 
-        {allArt.length === 0 && (
-          <p class="text-center text-xl py-12 col-span-full">No artwork yet — add .md files in src/content/artwork/ and matching images in src/assets/art/</p>
-        )}
-      </div>
-    </main>
+    <ul>
+        <li>Post apocalyptic/military stuff</li>
+        <li>People and anatomy studies</li>
+        <li>Some animals</li>
+        <li>Silly little doodles</li>
+    </ul>
+   
+    <p>If you want to read my opinions on art, check my blogs!</p>
+
   </body>
 </html>

@@ -1,0 +1,25 @@
+---
+import Navigation from '../components/Navigation.astro';
+import "../styles/global.css";
+const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
+const pageTitle = "My blogs";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} >
+    <title>Astro</title>
+  </head>
+  <body>
+    <Navigation />
+    <h1>My blogs</h1>
+
+    <div id="post-list" class="nav-links">
+     {allPosts.map((post: any) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
+    </div>
+
+  </body>
+</html>

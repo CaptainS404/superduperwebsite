@@ -1,0 +1,42 @@
+---
+import Navigation from '../components/Navigation.astro';
+import "../styles/global.css";
+
+const pageTitle = "Home Page";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} >
+    <title>Astro</title>
+  </head>
+ 
+  <body>
+    <Navigation />
+    <h1>About me and this page</h1>
+    <p>
+      I mainly created this page to talk about the things I like.
+      <br>
+      I might expand this in the future to talk about and share my art, though for now I'll just keep it centered about open-source programs, with that also Linux.
+    </p>
+
+    <p>For now, my main topics here will be:</p>
+
+    <ul>
+        <li>Various Linux distros that I experiment with</li>
+        <li>Krita or other art programs</li>
+        <li>Creating websites like this one</li>
+        <li>My art (at some point)</li>
+        <li>Various life experiences and wisdom</li>
+    </ul>
+   
+    <p>I'll also make some guides in the future (if everything goes according to plan)</p>
+    <br>
+    <br>
+    <p>If you want to contact me, text me on Instagram!</p>
+
+  </body>
+</html>

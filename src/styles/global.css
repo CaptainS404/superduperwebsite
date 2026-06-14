@@ -1,5 +1,5 @@
 html {
-  background-color: rgb(252, 237, 215);
+  background-color: rgb(240, 217, 190);
   font-family: sans-serif;
 }
 
@@ -24,9 +24,9 @@ h1 {
 
 /* nav styles */
 .navbar {
-  background-color: rgb(255, 231, 135);        /* Change this to any color you like */
+  background-color: rgb(226, 184, 135);        /* Change this to any color you like */
   padding: 0.5rem 0;
-  width: 100%;
+  width: 100%; 
   margin-bottom: 1rem;
   border-radius: 10px;
 }

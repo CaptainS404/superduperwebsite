@@ -27,6 +27,7 @@ h1 {
 .nav-links {
   width: 100%;
   display: none;
+  background-color: 72, 184, 208;
   margin: 0;
   text-align: center;
 }

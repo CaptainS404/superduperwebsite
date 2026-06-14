@@ -1,6 +1,10 @@
-html a {
+html {
   background-color: #2f3e4f;
   font-family: sans-serif;
+  color: #e2e8f0;
+}
+
+a {
   color: #e2e8f0;
 }
 

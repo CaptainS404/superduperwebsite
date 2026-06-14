@@ -1,11 +1,11 @@
 html {
-  background-color: #2f3e4f;
+  background-color: #ffffff;
   font-family: sans-serif;
-  color: #e2e8f0;
+  color: #1f2937;
 }
 
 a {
-  color: #e2e8f0;
+  color: #1f2937;
 }
 
 body {
@@ -29,12 +29,13 @@ h1 {
 
 /* nav styles */
 .navbar {
-  background-color: #2f3e4f;        /* Change this to any color you like */
+  background-color: #f8fafc;        /* Change this to any color you like */
   padding: 0.5rem 0;
   width: 100%; 
   margin-bottom: 1rem;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  position: sticky;
 }
 
 .nav-links {
@@ -53,12 +54,12 @@ h1 {
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #e2e8f0;
+  color: #1f2937;
 }
 
 .nav-links a:hover,
 .nav-links a:focus {
-  background-color: #1c2938;
+  background-color: #f1f5f9;
   border-radius: 10px;
 }
 

@@ -1,10 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "Lord Ben's art cave";
+import banner from '../assets/art/sketches/site/banner.png';
 ---
 <BaseLayout>
   <img 
-    src={`${import.meta.env.BASE_URL}assets/art/sketches/site/banner.png`} 
+    src={banner} 
     alt="Banner"
     style="max-width: 100%; height: auto; border-radius: 8px; margin: 1rem 0;"
   >

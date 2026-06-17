@@ -87,6 +87,7 @@ h1 {
   max-height: 420px;
   border-radius: 4px;
   object-fit: contain;
+  cursor: zoom-in;
 }
 
 .image-grid-col-2 {

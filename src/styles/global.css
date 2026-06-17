@@ -76,15 +76,17 @@ h1 {
 
   display: grid;
   grid-template-columns: repeat(var(--num-cols), 1fr);
-  grid-auto-rows: var(--row-hight);
+  grid-auto-rows: minmax(200px, auto);
   gap: var(--gap);
 
 }
 
 .image-grid > img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  max-height: 420px;
+  border-radius: 4px;
+  object-fit: contain;
 }
 
 .image-grid-col-2 {

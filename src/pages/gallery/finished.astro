@@ -1,0 +1,77 @@
+---
+import Navigation from '../../components/Navigation.astro';
+import "../../styles/global.css";
+
+const pageTitle = "Art Page";
+---
+
+<html lang="en">
+  <body>
+    <Navigation />
+    <h1>This is where my sketches can be found</h1>
+    <div class="image-grid">
+
+      <img src={`${import.meta.env.BASE_URL}/assets/art/sketches/site/bluestatue.jpg`}
+           alt="Blue Statue Sketch"
+      >
+      <img src={`${import.meta.env.BASE_URL}/assets/art/sketches/site/Illustration7.jpg`}
+           alt="Sketch 2026-06-17"
+      >
+
+      <img src="" alt="">
+      <img src="" alt="">
+      <img src="" alt="">
+      <img src="" alt="">
+    </div>
+
+
+    <script>
+  // Simple Lightbox
+  const images = document.querySelectorAll('.image-grid img');
+  
+  images.forEach(img => {
+    img.style.cursor = 'zoom-in';
+    
+    img.addEventListener('click', () => {
+      // Create modal
+      const modal = document.createElement('div');
+      modal.style.cssText = `
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0, 0, 0, 0.92);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        cursor: zoom-out;
+      `;
+      
+      const bigImg = document.createElement('img');
+      bigImg.src = img.src;
+      bigImg.style.cssText = `
+        max-width: 95%;
+        max-height: 95vh;
+        object-fit: contain;
+        border-radius: 8px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      `;
+      
+      modal.appendChild(bigImg);
+      document.body.appendChild(modal);
+      
+      // Close on click background or ESC
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) modal.remove();
+      });
+      
+      document.addEventListener('keydown', function handler(e) {
+        if (e.key === 'Escape') {
+          modal.remove();
+          document.removeEventListener('keydown', handler);
+        }
+      });
+    });
+  });
+</script>
+  </body>
+</html>

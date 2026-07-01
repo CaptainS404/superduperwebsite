@@ -33,3 +33,6 @@ If you, for some reason still feel uncomfortable about looking at people (which 
 - [Line of Action](https://line-of-action.com) human ref photos
 - [Quickposes](https://quickposes.com/en) pretty much the same as Line of Action
 - [Characterdesigns](https://www.characterdesigns.com/#home-section) lots of ref photo sets
+
+
+**Line of Action** and **Quickposes.com** are used mainly for timed gesture drawings, while **Characterdesigns.com** houses many great resources including a gallery of reference photos. **Archive.org** is basically a huge library, not exclusive to art related content. That means you will have to do some research to find the things you need.

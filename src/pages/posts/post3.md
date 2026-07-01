@@ -1,12 +1,12 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'Drawing humans - simplification'
+title: 'Why drawing humans is such a difficult thing'
 pubDate: 2026-07-01
 description: 'post about drawing people'
 author: 'Captain S'
 tags: ["astro", "blogging", "learning in public"]
 ---
-# Why drawing humans is such a difficult thing #
+
 Pretty much anyone who has ever tried to draw a (more or less realistic) human being probably faced some kind of difficulties.
 Proportions, muscles, all these tiny details can and likely will get overwhelming if you don't go at it right.
 Also, if you decide to learn to draw the human figure, you may face the same issue when getting started learning.

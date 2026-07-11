@@ -24,9 +24,6 @@ As an example, you can use an egg shape for the ribcage and cylinders for the le
 
 As we already discussed, the human form can be very complicated. As specially for beginners, it is a bad idea to try to draw such complicated things out of memory. Not using any kind of reference is the easiest way to get into bad habits and not really getting the results you want. For drawing the human form, you can find lots of great and free resources online. 
 
-![Example](../../../public/assets/art/site/Illustration6.jpg)
-
-
 Before you proceed though, you should be aware that learning the human anatomy involves seeing human anatomy. On all the sites listed below, you will also be able to find clothed models or at least models in underwear. Nude models have absolutely nothing to do with pornography, it's just a part of art, just as it always has been.
 If you, for some reason still feel uncomfortable about looking at people (which is totally okay), there may even be resources for you out there.
 
